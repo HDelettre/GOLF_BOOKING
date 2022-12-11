@@ -10,10 +10,7 @@ require("dotenv").config({
 const authRoutes = require('./Routes/users');
 
 // MONGODB
-//require('./Config/mongodb');
-
-// MYSQL
-require('./Config/mysql');
+require('./Config/mongodb');
 
 const app = express();
 

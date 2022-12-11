@@ -1,0 +1,44 @@
+.logincontainer {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid $couleur_secondaire;
+  border-radius: $radius_large;
+  padding: $margin_large;
+  margin-top: $margin_xlarge;
+
+  &_champs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin: $margin_medium 0;
+  }
+
+  &_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--label {
+      width: 80px;
+      margin-right: $margin_medium;
+    }
+
+    &--input {
+      padding: $margin_small;
+      border: 1px solid $couleur_primaire;
+    }
+
+    &--error {
+      color: $couleur_error;
+      font-size: $font_medium;
+      font-weight: 600;
+    }
+
+    h2 {
+      border-bottom: 1px solid $couleur_secondaire;
+    }
+  }
+}

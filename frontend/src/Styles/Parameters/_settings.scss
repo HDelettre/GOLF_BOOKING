@@ -1,0 +1,39 @@
+body {
+  height: 100%;
+}
+
+#root {
+  max-width: 1400px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $couleur_background;
+  font-size: $font_standard;
+  color: $couleur_primaire;
+  font-family: "Ubuntu", sans-serif;
+}
+
+h1 {
+  font-family: "Alfa Slab One", cursive;
+  font-size: $font_h1;
+}
+
+.bouton {
+  background-color: lighten($couleur_secondaire, 30%);
+  color:$couleur_tertiaire;
+  font-weight: 600;
+  padding: $margin_medium;
+  width: 120px;
+  text-align: center;
+  margin: $margin_medium_large 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: $radius_medium;
+  border: 2px solid $couleur_primaire;
+  
+  &:hover{
+    background-color: $couleur_primaire;
+  }
+}
+
