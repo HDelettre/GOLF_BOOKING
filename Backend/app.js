@@ -13,7 +13,9 @@ const authRoutes = require('./Routes/users');
 //require('./Config/mongodb');
 
 // MYSQL
-require('./Config/mysql');
+const sequelize = require('./Config/mysql');
+require('./Models/user.model');
+sequelize.sync({alter: true});
 
 const app = express();
 
