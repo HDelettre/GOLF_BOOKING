@@ -1,17 +1,20 @@
+* {
+  font-family: "Ubuntu", sans-serif;
+  background-color: white;
+  font-size: 14px;
+  color: #00cc66;
+  box-sizing: content-box;
+}
+
 body {
   height: 100%;
 }
 
 #root {
   max-width: 1400px;
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: white;
-  font-size: 14px;
-  color: #00cc66;
-  font-family: "Ubuntu", sans-serif;
 }
 
 h1 {
@@ -20,6 +23,7 @@ h1 {
 }
 
 .bouton {
+  min-width: 150px;
   background-color: #adff99;
   color: #660000;
   font-weight: 600;
@@ -34,6 +38,19 @@ h1 {
 }
 .bouton:hover {
   background-color: #00cc66;
+}
+
+.btn_select {
+  background-color: #00cc66;
+}
+
+input, select {
+  border: 1px solid #33ff00;
+  border-radius: 8px;
+  color: #660000;
+}
+input:focus, select:focus {
+  border: 2px solid #00cc66;
 }
 
 .banner {
@@ -159,4 +176,69 @@ h1 {
 }
 .logincontainer_form h2 {
   border-bottom: 1px solid #33ff00;
+}
+
+.home {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home_welcome {
+  width: 100%;
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home_navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid #00cc66;
+  border-radius: 22px;
+}
+.home_container {
+  margin-top: 15px;
+}
+.home_box {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.form {
+  width: 40%;
+  border: 2px solid #00cc66;
+  border-radius: 16px;
+  margin-top: 15px;
+  padding: 8px;
+}
+.form_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form_container--label {
+  padding: 5px;
+}
+.form_container--input {
+  padding: 5px;
+}
+.form_container--left {
+  align-self: baseline;
+  margin: 8px;
+}
+
+.input_box {
+  margin: 8px;
+  width: 85%;
+  display: flex;
+  justify-content: center;
+}
+.input_box label {
+  width: 80px;
+}
+.input_box select {
+  min-width: 199px;
 }/*# sourceMappingURL=styles.css.map */

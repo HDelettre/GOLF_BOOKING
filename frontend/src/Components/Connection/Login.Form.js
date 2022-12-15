@@ -9,7 +9,28 @@ const LoginForm = () => {
   const navigate = useNavigate();
 
   const loginHandle = () => {
-    navigate('/Home');
+    const bodyData = {
+      email: email,
+      password: password
+    }
+    async function fetchLogin() {
+      try {
+      const reponse = await fetch('http://localhost:5000/api/auth/login', {
+        method: 'POST',
+        body: JSON.stringify(bodyData),
+        headers: { "Content-Type": "application/json" }
+      });
+
+      const reponseJSON = await reponse.json();
+
+      console.log('REPONSE FETCH LOGIN: ', reponseJSON);
+      localStorage.setItem('userConnect', JSON.stringify(reponseJSON));
+      if (reponse.ok) {
+        navigate('/Home');
+      }
+    } catch (error) { console.log(error)};
+    }
+    fetchLogin();
   };
 
   const emailHandle = (e) => {

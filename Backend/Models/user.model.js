@@ -18,13 +18,14 @@ const User = sequelize.define('User', {
     type: DataTypes.STRING,
     allowNull: false
   },
+  
   firstName: {
     type: DataTypes.STRING,
-    allowNull: true
+    allowNull: false
   },
-  lastname: {
+  lastName: {
     type: DataTypes.STRING,
-    allowNull: true
+    allowNull: false
   },
   avatar:{
     type:STRING,
@@ -54,6 +55,7 @@ const User = sequelize.define('User', {
     type:DataTypes.STRING,
     defaultValue: 'USER'
   }
+  
 });
 
 module.exports = User;

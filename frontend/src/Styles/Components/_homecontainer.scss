@@ -1,0 +1,32 @@
+.home {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &_welcome {
+    width: 100%;
+    margin-left: $margin_xlarge;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &_navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    border:1px solid $couleur_primaire;
+    border-radius: $radius_large;
+  }
+
+  &_container {
+    margin-top: $margin_large;
+  }
+
+  &_box {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}

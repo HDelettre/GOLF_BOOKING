@@ -1,17 +1,20 @@
+* {
+  font-family: "Ubuntu", sans-serif;
+  background-color: $couleur_background;
+  font-size: $font_standard;
+  color: $couleur_primaire;
+  box-sizing: content-box;
+}
+
 body {
   height: 100%;
 }
 
 #root {
   max-width: 1400px;
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: $couleur_background;
-  font-size: $font_standard;
-  color: $couleur_primaire;
-  font-family: "Ubuntu", sans-serif;
 }
 
 h1 {
@@ -20,6 +23,7 @@ h1 {
 }
 
 .bouton {
+  min-width: 150px;
   background-color: lighten($couleur_secondaire, 30%);
   color:$couleur_tertiaire;
   font-weight: 600;
@@ -34,6 +38,20 @@ h1 {
   
   &:hover{
     background-color: $couleur_primaire;
+  }
+}
+
+.btn_select {
+  background-color: $couleur_primaire;
+}
+
+input, select {
+  border: 1px solid $couleur_secondaire;
+  border-radius: $radius_small;
+  color: $couleur_tertiaire;
+
+  &:focus {
+    border: 2px solid $couleur_primaire;
   }
 }
 
